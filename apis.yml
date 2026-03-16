@@ -1,11 +1,27 @@
+aid: ble
 name: BLE
-description: BLE is a technology or concept used in computing and information technology
-  to address specific technical challenges. It provides capabilities that help practitioners
-  build, manage, or improve systems and processes in their domain.
-url: null
+description: >-
+  Bluetooth Low Energy (BLE) is a wireless personal area network technology
+  designed for IoT and embedded devices that require short-range communication
+  with minimal power consumption. BLE is widely used in wearables, beacons,
+  health monitors, and smart home devices.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-- BLE
-created: '2025'
-modified: '2025'
+  - BLE
+  - Bluetooth
+  - IoT
+  - Wireless
+  - Embedded
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/ble/refs/heads/main/apis.yml
+created: '2025-01-01'
+modified: '2026-03-16'
+specificationVersion: '0.19'
 apis: []
-common: []
+common:
+  - type: Website
+    url: https://www.bluetooth.com/
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
