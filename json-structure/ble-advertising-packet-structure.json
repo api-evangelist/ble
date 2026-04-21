@@ -1,0 +1,14 @@
+{
+  "name": "BLE Advertising Packet Structure",
+  "description": "JSON structure for a decoded BLE advertising packet",
+  "fields": [
+    { "name": "address", "type": "string", "required": true, "description": "MAC address in XX:XX:XX:XX:XX:XX format" },
+    { "name": "addressType", "type": "enum[public,random_static,random_private_resolvable,random_private_non_resolvable]", "required": false },
+    { "name": "rssi", "type": "integer", "required": true, "description": "Signal strength in dBm" },
+    { "name": "localName", "type": "string", "required": false },
+    { "name": "serviceUUIDs", "type": "array<string>", "required": false },
+    { "name": "manufacturerData", "type": "object<ManufacturerData>", "required": false },
+    { "name": "txPowerLevel", "type": "integer", "required": false },
+    { "name": "connectable", "type": "boolean", "required": false }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "uuid": "0x180D",
+  "name": "Heart Rate",
+  "type": "org.bluetooth.service",
+  "characteristics": [
+    {
+      "uuid": "0x2A37",
+      "name": "Heart Rate Measurement",
+      "properties": ["Notify"],
+      "format": "struct { flags: uint8, heartRate: uint8|uint16, energyExpended?: uint16, rrInterval?: uint16[] }",
+      "unit": "beats per minute"
+    },
+    {
+      "uuid": "0x2A38",
+      "name": "Body Sensor Location",
+      "properties": ["Read"],
+      "format": "uint8",
+      "unit": null
+    },
+    {
+      "uuid": "0x2A39",
+      "name": "Heart Rate Control Point",
+      "properties": ["Write"],
+      "format": "uint8",
+      "unit": null
+    }
+  ]
+}

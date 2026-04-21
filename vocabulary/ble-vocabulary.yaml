@@ -1,0 +1,63 @@
+name: Bluetooth Low Energy (BLE) Vocabulary
+description: Key terms and concepts in the Bluetooth Low Energy specification
+terms:
+  - term: Generic Attribute Profile (GATT)
+    definition: >-
+      Defines the framework for data transfer between BLE devices using a client/server
+      model based on services and characteristics. GATT establishes how attribute data
+      is structured, discovered, and exchanged.
+  - term: Generic Access Profile (GAP)
+    definition: >-
+      Controls device connectivity and advertising in BLE. GAP defines roles (Central,
+      Peripheral, Broadcaster, Observer) and how devices discover each other and
+      establish connections.
+  - term: Service
+    definition: >-
+      A collection of data and associated behaviors (characteristics) to accomplish a
+      function or feature. Services are identified by UUIDs assigned by the Bluetooth SIG
+      or custom 128-bit UUIDs.
+  - term: Characteristic
+    definition: >-
+      A data value within a GATT service, identified by a UUID and containing properties
+      that define how it can be accessed (read, write, notify, indicate).
+  - term: Descriptor
+    definition: >-
+      Additional information about a characteristic, such as client configuration
+      (enabling notifications/indications) or presentation format metadata.
+  - term: Advertising
+    definition: >-
+      Broadcasting of BLE packets by a Peripheral device to announce its presence and
+      capabilities. Advertising packets may contain device name, service UUIDs, manufacturer
+      data, and TX power level.
+  - term: UUID
+    definition: >-
+      Universally Unique Identifier used to identify GATT services, characteristics, and
+      descriptors. The Bluetooth SIG assigns 16-bit UUIDs; custom attributes use 128-bit UUIDs.
+  - term: RSSI (Received Signal Strength Indicator)
+    definition: >-
+      Measurement of radio signal strength received from a BLE device, expressed in dBm.
+      Used for proximity estimation and connection quality assessment.
+  - term: TX Power Level
+    definition: >-
+      The transmit power of a BLE device in dBm, advertised to allow receivers to
+      calculate estimated distance using path loss formulas.
+  - term: LE Audio
+    definition: >-
+      Bluetooth 5.2+ feature set introducing the LC3 codec, Auracast broadcast audio,
+      and the Hearing Access Profile for next-generation wireless audio.
+  - term: Auracast
+    definition: >-
+      Bluetooth broadcast audio standard enabling a single transmitter to broadcast audio
+      to unlimited receivers, used in public venues, hearing loops, and assistive listening.
+  - term: Direction Finding
+    definition: >-
+      Bluetooth 5.1+ capability enabling AoA (Angle of Arrival) and AoD (Angle of Departure)
+      measurements for centimeter-level indoor positioning.
+  - term: Isochronous Channels (ISO)
+    definition: >-
+      Bluetooth 5.2+ channel type providing time-bounded data transmission for synchronized
+      audio streaming between multiple devices.
+  - term: Conformance
+    definition: >-
+      Verification that a Bluetooth implementation meets the requirements of the
+      specification, typically tested through Bluetooth SIG qualification and BQTK test tools.

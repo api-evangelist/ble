@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "bluetooth": "https://www.bluetooth.com/ontology/",
+    "uuid": "bluetooth:uuid",
+    "rssi": "bluetooth:rssi",
+    "txPowerLevel": "bluetooth:txPowerLevel",
+    "serviceUUIDs": "bluetooth:serviceUUIDs",
+    "manufacturerData": "bluetooth:manufacturerData",
+    "companyId": "bluetooth:companyId",
+    "connectable": "bluetooth:connectable",
+    "addressType": "bluetooth:addressType",
+    "characteristics": "bluetooth:characteristics",
+    "localName": "name",
+    "address": "bluetooth:deviceAddress"
+  }
+}

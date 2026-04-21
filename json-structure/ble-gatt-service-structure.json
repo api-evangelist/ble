@@ -1,0 +1,10 @@
+{
+  "name": "BLE GATT Service Structure",
+  "description": "JSON structure for a Bluetooth GATT service definition",
+  "fields": [
+    { "name": "uuid", "type": "string", "required": true, "description": "16-bit or 128-bit service UUID" },
+    { "name": "name", "type": "string", "required": true },
+    { "name": "type", "type": "enum[org.bluetooth.service,custom]", "required": false },
+    { "name": "characteristics", "type": "array<GattCharacteristic>", "required": false }
+  ]
+}

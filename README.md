@@ -12,12 +12,12 @@ Bluetooth Low Energy (BLE), also known as Bluetooth Smart, is a wireless persona
 ## Timestamps
 
 - **Created:** 2025-01-01
-- **Modified:** 2026-04-19
+- **Modified:** 2026-04-21
 
 ## APIs
 
 ### Bluetooth Core Specification
-The Bluetooth Core Specification defines the complete Bluetooth wireless communication protocol stack including BLE (LE) and Classic Bluetooth. The current stable version is Bluetooth 5.4. The specification covers the Physical Layer, Link Layer, HCI, L2CAP, SM, GAP, and GATT layers, as well as LE Audio, Isochronous Channels, and Direction Finding extensions.
+The Bluetooth Core Specification defines the complete Bluetooth wireless communication protocol stack including BLE (LE) and Classic Bluetooth. The current stable version is Bluetooth 6.0. The specification covers the Physical Layer, Link Layer, HCI, L2CAP, SM, GAP, and GATT layers, as well as LE Audio, Isochronous Channels, and Direction Finding extensions.
 
 **Human URL:** [https://www.bluetooth.com/specifications/specs/core60/](https://www.bluetooth.com/specifications/specs/core60/)
 
@@ -29,6 +29,11 @@ The Bluetooth Core Specification defines the complete Bluetooth wireless communi
 
 - [Documentation](https://www.bluetooth.com/specifications/specs/)
 - [Specification](https://www.bluetooth.com/specifications/specs/core60/)
+- [JSON Schema - GATT Service](json-schema/ble-gatt-service-schema.json)
+- [JSON Schema - Advertising Packet](json-schema/ble-advertising-packet-schema.json)
+- [JSON-LD Context](json-ld/ble-context.jsonld)
+- [Example - Heart Rate Service](examples/ble-heart-rate-service-example.json)
+- [Example - Advertising Packet](examples/ble-advertising-packet-example.json)
 
 ### GATT and Assigned Numbers
 The Generic Attribute Profile (GATT) defines the framework for data transfer between Bluetooth LE devices. The Bluetooth SIG maintains assigned numbers for services, characteristics, and descriptors that enable interoperable implementations.
@@ -66,6 +71,10 @@ Bluetooth Mesh enables many-to-many device communications and is particularly su
 - [Training](https://www.bluetooth.com/develop-with-bluetooth/training/)
 - [Community](https://www.bluetooth.com/develop-with-bluetooth/)
 - [Developer Tools and SDKs](https://www.bluetooth.com/develop-with-bluetooth/developer-resources/)
+- [Conformance and Qualification](https://www.bluetooth.com/develop-with-bluetooth/qualification-listing/)
+- [Spectral Rules](rules/ble-spectral-rules.yml)
+- [Naftiko Capability](capabilities/ble-gatt-capability.yaml)
+- [Vocabulary](vocabulary/ble-vocabulary.yaml)
 
 ## Features
 

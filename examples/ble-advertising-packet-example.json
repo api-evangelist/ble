@@ -1,0 +1,13 @@
+{
+  "address": "AA:BB:CC:DD:EE:FF",
+  "addressType": "public",
+  "rssi": -67,
+  "localName": "Polar H10",
+  "serviceUUIDs": ["0x180D", "0xFEE1"],
+  "manufacturerData": {
+    "companyId": 107,
+    "data": "01000100"
+  },
+  "txPowerLevel": 4,
+  "connectable": true
+}

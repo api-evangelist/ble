@@ -1,0 +1,67 @@
+name: Bluetooth Low Energy (BLE) GATT Capability
+description: >-
+  Naftiko capability definition for Bluetooth Low Energy GATT interactions,
+  documenting service discovery, characteristic read/write/notify, and
+  advertising data interpretation.
+version: 1.0.0
+specification:
+  name: Bluetooth Core Specification
+  version: "6.0"
+  url: https://www.bluetooth.com/specifications/specs/core60/
+  governance: https://www.bluetooth.com/about-us/membership/
+  conformance: https://www.bluetooth.com/develop-with-bluetooth/qualification-listing/
+capabilities:
+  - name: discoverServices
+    description: Discover all GATT services exposed by a connected BLE peripheral
+    layer: GATT
+    operation: Service Discovery
+    reference: "Bluetooth Core Spec Vol 3, Part G, Section 4.4"
+  - name: discoverCharacteristics
+    description: Discover characteristics within a specific GATT service
+    layer: GATT
+    operation: Characteristic Discovery
+  - name: readCharacteristic
+    description: Read the current value of a GATT characteristic
+    layer: GATT
+    operation: Characteristic Value Read
+    properties: ["Read"]
+  - name: writeCharacteristic
+    description: Write a value to a GATT characteristic
+    layer: GATT
+    operation: Characteristic Value Write
+    properties: ["Write", "Write Without Response"]
+  - name: enableNotifications
+    description: Enable characteristic value notifications via CCCD descriptor
+    layer: GATT
+    operation: Notifications
+    properties: ["Notify"]
+  - name: enableIndications
+    description: Enable characteristic value indications (acknowledged notifications)
+    layer: GATT
+    operation: Indications
+    properties: ["Indicate"]
+  - name: scanAdvertising
+    description: Scan for BLE advertising packets from nearby devices
+    layer: GAP
+    operation: Scanning
+    advertisingTypes: ["ADV_IND", "ADV_NONCONN_IND", "ADV_SCAN_IND"]
+  - name: connect
+    description: Establish a BLE connection with a peripheral device
+    layer: GAP
+    operation: Connection Establishment
+implementations:
+  - name: Apple Core Bluetooth
+    platform: iOS/macOS
+    url: https://developer.apple.com/documentation/corebluetooth
+  - name: Android Bluetooth API
+    platform: Android
+    url: https://developer.android.com/guide/topics/connectivity/bluetooth/ble-overview
+  - name: Web Bluetooth API
+    platform: Browser (Chrome/Edge)
+    url: https://developer.chrome.com/docs/capabilities/bluetooth
+  - name: Zephyr BT Stack
+    platform: RTOS/Embedded
+    url: https://docs.zephyrproject.org/latest/connectivity/bluetooth/index.html
+  - name: nRF Connect SDK
+    platform: Nordic nRF52/53
+    url: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/index.html

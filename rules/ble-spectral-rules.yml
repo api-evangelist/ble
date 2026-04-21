@@ -1,0 +1,45 @@
+rules:
+  ble-uuid-format:
+    description: GATT service and characteristic UUIDs should follow Bluetooth SIG format
+    message: "UUID must be a 16-bit hex value or full 128-bit UUID string"
+    given: "$.components.schemas[*].properties.uuid"
+    then:
+      field: pattern
+      function: truthy
+
+  ble-rssi-range:
+    description: RSSI values must be within valid BLE range (-127 to 0 dBm)
+    message: "RSSI field must define minimum and maximum constraints"
+    given: "$.components.schemas.AdvertisingPacket.properties.rssi"
+    then:
+      field: minimum
+      function: defined
+
+  ble-characteristic-properties-enum:
+    description: GATT characteristic properties must use defined values
+    message: "Characteristic properties must use enum values from the GATT specification"
+    given: "$.components.schemas[*].$defs.GattCharacteristic.properties.properties.items"
+    then:
+      field: enum
+      function: truthy
+
+  ble-address-format:
+    description: BLE device MAC address must follow XX:XX:XX:XX:XX:XX format
+    message: "BLE address must match MAC address pattern"
+    given: "$.components.schemas.AdvertisingPacket.properties.address"
+    then:
+      field: pattern
+      function: truthy
+
+  ble-service-uuid-required:
+    description: GATT service definitions must include a UUID
+    message: "GATT service must include a uuid field"
+    given: "$.components.schemas.GattService"
+    then:
+      field: required
+      function: schema
+      functionOptions:
+        schema:
+          type: array
+          contains:
+            const: uuid

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/ble/main/json-schema/ble-advertising-packet-schema.json",
+  "title": "BLE Advertising Packet",
+  "description": "Schema for a decoded BLE advertising packet (ADV_IND or ADV_NONCONN_IND)",
+  "type": "object",
+  "properties": {
+    "address": {
+      "type": "string",
+      "description": "BLE device MAC address",
+      "pattern": "^([0-9A-Fa-f]{2}:){5}[0-9A-Fa-f]{2}$"
+    },
+    "addressType": {
+      "type": "string",
+      "enum": ["public", "random_static", "random_private_resolvable", "random_private_non_resolvable"]
+    },
+    "rssi": {
+      "type": "integer",
+      "description": "Received signal strength indicator in dBm",
+      "minimum": -127,
+      "maximum": 0
+    },
+    "localName": { "type": "string", "description": "Complete or shortened local name" },
+    "serviceUUIDs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Advertised service UUIDs"
+    },
+    "manufacturerData": {
+      "type": "object",
+      "properties": {
+        "companyId": { "type": "integer", "description": "Bluetooth SIG-assigned company identifier" },
+        "data": { "type": "string", "description": "Hex-encoded manufacturer specific data" }
+      }
+    },
+    "txPowerLevel": { "type": "integer", "description": "Transmit power level in dBm" },
+    "connectable": { "type": "boolean", "description": "Whether device accepts connections" }
+  },
+  "required": ["address", "rssi"]
+}

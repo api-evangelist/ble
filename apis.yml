@@ -21,7 +21,7 @@ tags:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/ble/refs/heads/main/apis.yml
 created: '2025-01-01'
-modified: '2026-04-19'
+modified: '2026-04-21'
 specificationVersion: '0.19'
 apis:
   - aid: ble:bluetooth-core-specification
@@ -29,7 +29,7 @@ apis:
     description: >-
       The Bluetooth Core Specification defines the complete Bluetooth wireless
       communication protocol stack including BLE (LE) and Classic Bluetooth.
-      The current stable version is Bluetooth 5.4. The specification covers the
+      The current stable version is Bluetooth 6.0. The specification covers the
       Physical Layer, Link Layer, HCI, L2CAP, SM, GAP, and GATT layers, as well as
       LE Audio, Isochronous Channels, and Direction Finding extensions.
     humanURL: https://www.bluetooth.com/specifications/specs/core60/
@@ -44,6 +44,20 @@ apis:
         url: https://www.bluetooth.com/specifications/specs/
       - type: Specification
         url: https://www.bluetooth.com/specifications/specs/core60/
+      - type: JSONSchema
+        url: json-schema/ble-gatt-service-schema.json
+      - type: JSONSchema
+        url: json-schema/ble-advertising-packet-schema.json
+      - type: JSONStructure
+        url: json-structure/ble-gatt-service-structure.json
+      - type: JSONStructure
+        url: json-structure/ble-advertising-packet-structure.json
+      - type: JSONLD
+        url: json-ld/ble-context.jsonld
+      - type: Example
+        url: examples/ble-heart-rate-service-example.json
+      - type: Example
+        url: examples/ble-advertising-packet-example.json
   - aid: ble:gatt-specification
     name: GATT and Assigned Numbers
     description: >-
@@ -96,6 +110,14 @@ common:
   - type: SDK
     url: https://www.bluetooth.com/develop-with-bluetooth/developer-resources/
     title: Developer Tools and SDKs
+  - type: Conformance
+    url: https://www.bluetooth.com/develop-with-bluetooth/qualification-listing/
+  - type: SpectralRules
+    url: rules/ble-spectral-rules.yml
+  - type: NaftikoCapability
+    url: capabilities/ble-gatt-capability.yaml
+  - type: Vocabulary
+    url: vocabulary/ble-vocabulary.yaml
   - type: Features
     data:
       - name: Low Energy Protocol Stack
