@@ -54,9 +54,9 @@ apis:
         url: json-structure/ble-advertising-packet-structure.json
       - type: JSONLD
         url: json-ld/ble-context.jsonld
-      - type: Example
+      - type: Examples
         url: examples/ble-heart-rate-service-example.json
-      - type: Example
+      - type: Examples
         url: examples/ble-advertising-packet-example.json
   - aid: ble:gatt-specification
     name: GATT and Assigned Numbers
@@ -107,14 +107,14 @@ common:
     url: https://www.bluetooth.com/develop-with-bluetooth/training/
   - type: Community
     url: https://www.bluetooth.com/develop-with-bluetooth/
-  - type: SDK
+  - type: SDKs
     url: https://www.bluetooth.com/develop-with-bluetooth/developer-resources/
     title: Developer Tools and SDKs
   - type: Conformance
     url: https://www.bluetooth.com/develop-with-bluetooth/qualification-listing/
   - type: SpectralRules
     url: rules/ble-spectral-rules.yml
-  - type: NaftikoCapability
+  - type: X-NaftikoCapability
     url: capabilities/ble-gatt-capability.yaml
   - type: Vocabulary
     url: vocabulary/ble-vocabulary.yaml
