@@ -97,6 +97,10 @@ apis:
       - type: Specification
         url: https://www.bluetooth.com/specifications/specs/mesh-profile/
 common:
+  - type: VulnerabilityDisclosure
+    url: security/ble-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/ble-domain-security.yml
   - type: Website
     url: https://www.bluetooth.com/
   - type: Documentation
