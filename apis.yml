@@ -130,8 +130,6 @@ common:
     url: https://www.bluetooth.com/develop-with-bluetooth/qualification-listing/
   - type: SpectralRules
     url: rules/ble-spectral-rules.yml
-  - type: X-NaftikoCapability
-    url: capabilities/ble-gatt-capability.yaml
   - type: Vocabulary
     url: vocabulary/ble-vocabulary.yaml
   - type: Features
