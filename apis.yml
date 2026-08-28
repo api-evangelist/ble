@@ -9,6 +9,17 @@ description: >-
   including the Generic Attribute Profile (GATT), Generic Access Profile (GAP), and
   the various service and characteristic specifications used for device interoperability.
 type: Index
+deliveryModel:
+  model: library
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Library · distributed through package registries, no callable service
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
