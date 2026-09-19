@@ -38,6 +38,14 @@ tags:
   - Bluetooth
   - Embedded
   - IoT
+  - Protocol
+  - Standards
+  - Wireless
+tags_raw:
+  - BLE
+  - Bluetooth
+  - Embedded
+  - IoT
   - Protocols
   - Standards
   - Wireless
@@ -57,6 +65,12 @@ apis:
       LE Audio, Isochronous Channels, and Direction Finding extensions.
     humanURL: https://www.bluetooth.com/specifications/specs/core60/
     tags:
+      - BLE
+      - Bluetooth
+      - Core Specification
+      - Protocol
+      - Standards
+    tags_raw:
       - BLE
       - Bluetooth
       - Core Specification
