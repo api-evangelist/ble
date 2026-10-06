@@ -52,7 +52,7 @@ tags_raw:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/ble/refs/heads/main/apis.yml
 created: '2025-01-01'
-modified: '2026-04-21'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
   - aid: ble:bluetooth-core-specification
@@ -134,6 +134,8 @@ apis:
       - type: Specification
         url: https://www.bluetooth.com/specifications/specs/mesh-profile/
 common:
+  - url: https://www.bluetooth.com/feed/
+    type: BlogRSS
   - type: VulnerabilityDisclosure
     url: security/ble-vulnerability-disclosure.yml
   - type: DomainSecurity
