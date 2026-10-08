@@ -134,6 +134,12 @@ apis:
       - type: Specification
         url: https://www.bluetooth.com/specifications/specs/mesh-profile/
 common:
+  - type: Plans
+    url: plans/ble-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/ble-rate-limits.yml
+  - type: FinOps
+    url: finops/ble-finops.yml
   - url: https://www.bluetooth.com/feed/
     type: BlogRSS
   - type: VulnerabilityDisclosure
